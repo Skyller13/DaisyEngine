@@ -104,16 +104,16 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\Prog\DaisyEngine\Libraries\glfw-3.4.bin.WIN64\include;E:\Prog\DaisyEngine\Libraries\glm;E:\Prog\DaisyEngine\Libraries\VulkanSDK\Include;E:\Prog\DaisyEngine\Libraries\ImGui;E:\Prog\DaisyEngine\Libraries\ImGui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Libraries\glfw-3.4.bin.WIN64\include;Libraries\glm;Libraries\VulkanSDK\Include;Libraries\ImGui;Libraries\ImGui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>E:\Prog\DaisyEngine\Libraries\VulkanSDK\Lib;E:\Prog\DaisyEngine\Libraries\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>Libraries\VulkanSDK\Lib;Libraries\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>call "E:\Prog\DaisyEngine\compile.bat"</Command>
+      <Command>call "$(SolutionDir)compile.bat"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -124,18 +124,18 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\Prog\DaisyEngine\Libraries\glfw-3.4.bin.WIN64\include;E:\Prog\DaisyEngine\Libraries\glm;E:\Prog\DaisyEngine\Libraries\VulkanSDK\Include;E:\Prog\DaisyEngine\Libraries\ImGui;E:\Prog\DaisyEngine\Libraries\ImGui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Libraries\glfw-3.4.bin.WIN64\include;Libraries\glm;Libraries\VulkanSDK\Include;Libraries\ImGui;Libraries\ImGui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>E:\Prog\DaisyEngine\Libraries\VulkanSDK\Lib;E:\Prog\DaisyEngine\Libraries\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>Libraries\VulkanSDK\Lib;Libraries\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>call "E:\Prog\DaisyEngine\compile.bat"</Command>
+      <Command>call "$(SolutionDir)compile.bat"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
